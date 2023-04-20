@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalisando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: green;
+            
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::after{
+            content: '⇦';
+            color: blue;
+        }
+        a::before{
+            content: '⇨';
+            color: blue;
+        }
+        .especial{
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <h2><ol>
+        <li># = id</li>
+        <li>. = class</li>
+        <li>: = pseudo-class</li>
+        <li>:: = pseudo-element</li>
+        <li>> = childrem</li>
+    </ol>       
+
+    </h2>
+    <ul>
+        <li><a href="https://www.youtube.com/shorts/O_Lykl8-bSM" target="_blank" class="especial" >Vera cantando</a></li>
+        <li><a href="https://www.youtube.com/shorts/7iPw38khgas" target="_blank">Vera e battleby</a></li>
+        <li><a href="https://www.youtube.com/shorts/STYgo48KeLs" target="_blank">As bolhas de agua</a></li>
+    </ul>
+</body>
+</html>

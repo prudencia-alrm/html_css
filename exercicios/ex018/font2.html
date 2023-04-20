@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+       @font-face {
+        font-family: 'love';
+        src: url(font/lovelarry.ttf) format('truetype'),url(font/lovelarry.otf) format(opentype);
+        font-weight: normal;
+        font-style: normal;
+
+       }
+/* tipos de format()
+-opentype (otf)
+-truetype (ttf)
+-embeddad-opentype ()
+-truetype-aat (aple advance typograph)
+-svg ()
+*/
+        
+
+        body{
+            font-family: 'love','Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: normal;
+
+        }
+        h1{
+            font-family: 'love', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        h2{
+            font-family: 'work Sans';
+            font-size: 2em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes baixadas e aplicadas</h1>
+    <p>vamos usar fontes baixadas de outro site </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dolores ad quidem fugiat molestias eligendi dolorem similique cupiditate? Culpa corrupti corporis minima deserunt reprehenderit voluptate fuga quia excepturi qui provident.</p>
+    <h2>Aplicando otf e ttf
+        <ol type="1" start="4">
+            <li>otf para format(opentype) ignore  acordar</li> 
+            <li>para formatos (truetype)  ignore levantar</li> 
+            <li>lista ordenadas</li> 
+            <li>usar ol para abrir coluna de listas</li>
+            <li>e usar -li- para os itens ou nomes na lista</li>
+      <ol>
+        <li>a</li>
+        <li>b</li>
+      </ol>
+        
+    </h2>
+    
+</body>
+</html>

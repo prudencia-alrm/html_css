@@ -1,0 +1,6 @@
+nota:
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = childrem
