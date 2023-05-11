@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(51, 50, 50);
+            font-size: 1.5em;
+            text-align: center;
+        }
+        body {
+
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;   
+            width: 150px;
+            height: 150px;
+        }
+
+        div#Q1 {
+            background-color: skyblue
+
+        }
+        div#Q2 {
+            background-image: linear-gradient(to bottom, yellow,red);
+        }
+        div#Q3 {
+            background-image: url('imagens/pattern003.png');
+        
+            
+        }
+        ul div.redonda {
+            background-color: lightgreen;
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: 10px 48px 0px -38px;
+           
+        }
+        div#Q4 {
+            background-color: orangered;        
+        }
+        div#Q5 {
+            background-image: radial-gradient( red, blue
+            );
+        
+        }
+        div#Q6 {
+            background-image: url(imagens/pattern001.png);
+        }
+    
+
+    </style>
+</head>
+<header>
+    <h1>
+        Brincando com "caixas" e imagen de fundo.
+</header>
+<body>
+    
+    </h1>
+    <div class="quadrado" id="Q1">
+
+    </div>
+    <div class="quadrado" id="Q2">
+
+    </div>
+    <div class="quadrado" id="Q3">
+
+    </div>
+    <hr>
+    
+        <ul>
+            <div class="redonda" id="Q4">
+                
+            </div>
+            <div class="redonda" id="Q5">
+
+            </div>
+            <div class="redonda" id="Q6">
+
+            </div>
+        </ul>
+   
+
+</body>
+</html>
