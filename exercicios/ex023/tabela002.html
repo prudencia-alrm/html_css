@@ -6,34 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas grandes</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{            
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+                 /*configuração comportamental*/ 
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 2px;                    
+            background-color: rgb(219, 213, 213);
+
+        }
+
         
         thead{
             background-color: gray;
             color: white;
 
         }
+        thead > tr > th {
+            font-size: 2em;
+        }
+        thead > tr > th{
+            background-color: gray;
+            position: sticky;
+            top: -1px;
+
+        }
         tbody{
             font-family: Arial, Helvetica, sans-serif;
         }
-        /*<!--posso usar odd e iven para colocar duas cores na coluna em caso de fundo colorido--> tambem posso usar (1n) e (-1n) para fazer cor sim cor não*/
+        /*<!--posso usar odd e iven para colocar duas cores na coluna em caso de fundo colorido--> tambem posso usar (2n-1) e (2n) para fazer cor sim cor não*/
         tbody > tr:nth-child(2n){
             background-color: lightgray;
             
 
         }
-        caption {
-            font-size: 1.2em;
-            font-weight: bold;
-            padding: 10px 2px;                    
-                  
-            background-color: rgb(219, 213, 213);
-
-        }
-        table{            
-            width: 500px;
-            border-collapse: collapse;      
-        }
-        .num{
+       
+        
+        td.num{
             text-align: right;
         }
         th,td{
@@ -63,8 +79,10 @@
     -->
     <caption>Lista de unidades federativas do Brasil por população</caption>
     <thead>
-        <th scope="col">Estado</th>
-        <th scope="col" style="width: 100px;">População</th>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </tr>
 
     </thead>
     <tbody>
@@ -162,8 +180,19 @@
         <th scope="row">Total de habitantes</th>
         <td class="num">210 147 125</td>
 
-    </tfoot>
-
+    </tfoot>    
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta praesentium quaerat error? Soluta possimus quos illum at ipsam officia dicta magni repellat amet placeat, aut temporibus veritatis perferendis nisi iste!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente fuga nemo id deleniti. Soluta labore ab quas officia cum consequatur, molestiae magni maxime, at itaque, hic rerum veniam iusto quis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum deserunt ipsa. Quae non ducimus deserunt expedita aliquam sed repudiandae dolores eaque natus, aliquid consequatur enim, explicabo quaerat laborum! Inventore!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta praesentium quaerat error? Soluta possimus quos illum at ipsam officia dicta magni repellat amet placeat, aut temporibus veritatis perferendis nisi iste!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente fuga nemo id deleniti. Soluta labore ab quas officia cum consequatur, molestiae magni maxime, at itaque, hic rerum veniam iusto quis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum deserunt ipsa. Quae non ducimus deserunt expedita aliquam sed repudiandae dolores eaque natus, aliquid consequatur enim, explicabo quaerat laborum! Inventore!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta praesentium quaerat error? Soluta possimus quos illum at ipsam officia dicta magni repellat amet placeat, aut temporibus veritatis perferendis nisi iste!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente fuga nemo id deleniti. Soluta labore ab quas officia cum consequatur, molestiae magni maxime, at itaque, hic rerum veniam iusto quis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum deserunt ipsa. Quae non ducimus deserunt expedita aliquam sed repudiandae dolores eaque natus, aliquid consequatur enim, explicabo quaerat laborum! Inventore!
+    </p>
 </body>
 </html>
